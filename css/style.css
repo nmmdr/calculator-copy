@@ -1,0 +1,100 @@
+/* 
+   :: GLOBAL
+   :: TYPOGRAPHY
+   :: NAVIGATION
+*/
+
+html {
+   background: #000;
+   height: 100%;
+}
+
+h1
+{
+   color: mintcream;
+   font-size: 8rem;
+   text-align: center;
+   align-items: center;
+   flex-direction: flex;
+   display: block;
+   justify-content: center;
+} 
+body {
+   align-items: center;
+   animation: body 1.5s linear infinite alternate;
+  -webkit-animation: body 1.5s linear infinite alternate;
+   display: flex;
+   font-family: 'Karla', sans-serif;
+   justify-content: center;
+   min-height: 100%;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   @media (min-width: 40em) {
+      margin: 0 auto;
+      width: 30vw;
+   }
+}
+
+form {
+   padding: 1rem 0;
+}
+
+select {
+   line-height: 3;
+}
+
+.body {
+  animation: body 3s linear infinite alternate;
+  -webkit-animation: body 3s linear infinite alternate;
+}
+
+@keyframes body {
+  0% {
+    background: rgb(195, 226, 203);
+  }
+  20% {
+    background:rgb rgb(167, 238, 197);
+  }
+  /* 40% { 
+   background: rgb(131, 211, 184);
+  }
+  60% {
+   background: rgb(137, 197, 164);
+  }*/
+  80% {
+   background: rgb(186, 233, 223);
+  }
+  100% {
+   background: honeydew;
+  }
+}
+
+@-webkit-keyframes body {
+   0% {
+       background: rgb(195, 226, 203);
+     }
+     20% {
+       background:rgb rgb(167, 238, 197);
+     }
+     /* 40% {
+      background: rgb(131, 211, 184);
+     }
+     60% {
+      background: rgb(115, 219, 205);
+     } */
+     80% {
+      background: rgb(186, 233, 223);
+     }
+     100% {
+      background: honeydew;
+     }
+}
+
+input,button {
+    background-color: coral;
+    scale: 5rem;
+}
