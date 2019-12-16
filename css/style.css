@@ -4,117 +4,57 @@
    :: NAVIGATION
 */
 
- html { 
-  
-   height: 100%;
-   background-color: coral;
-}
-
-
-
-
-h1
-{
-   
-   font-size: 8rem;
-   text-align: center;
-   align-items: center;
-   flex-direction: column;
-   display: block;
-   justify-content: center;
-} 
-body {
-   align-items: center;
-   display: flex;
+html, body {
+   background-color: #000;
+   color: #fff;
    font-family: 'Karla', sans-serif;
-   justify-content: center;
-   min-height: 100vh;
-   background-image: url(../calc-gif-.gif);
-   background-size: cover;
-   background-position: center center;
+   font-size: 16px;
+   height: 100%;
 }
 
-.wrapper {
-   display: center;
-   flex-direction: column;
+h1 {
    text-align: center;
-   justify-content: center;
-   background-color: #fffcf3;
-  
-   
+   text-decoration: none;
+   color: white;
 }
 
-
-   @media (min-width: 40em) {
-      margin: 0 auto;
-      width: 30vw;
-
-
-      
-   }
+a{
+   text-decoration: none;
+   color: white;
 }
 
-
-
-form {
-   padding: 1rem 0;
+img {
+   height: 20rem;
+   max-width: 100%;
 }
 
-select {
-   line-height: 3;
+ul,
+li {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
 }
 
-/* 
-.body {
-  animation: body 3s linear infinite alternate;
-  -webkit-animation: body 3s linear infinite alternate;
+ul#images,
+ul#filters {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   width: 100%;
 }
 
-@keyframes body {
-  0% {
-    background: rgb(195, 226, 203);
-  }
-  20% {
-    background:rgb rgb(167, 238, 197);
-  }
-  /* 40% { 
-   background: rgb(131, 211, 184);
-  }
-  60% {
-   background: rgb(137, 197, 164);
-  }
-  80% {
-   background: rgb(186, 233, 223);
-  }
-  100% {
-   background: honeydew;
-  }
+ul#filters li a {
+   color: #fff;
+   display: flex;
+   padding: 2rem;
+   text-decoration: none;
 }
 
-@-webkit-keyframes body {
-   0% {
-       background: rgb(195, 226, 203);
-     }
-     20% {
-       background:rgb rgb(167, 238, 197);
-     }
-     /* 40% {
-      background: rgb(131, 211, 184);
-     }
-     60% {
-      background: rgb(115, 219, 205);
-     } 
-     80% {
-      background: rgb(186, 233, 223);
-     }
-     100% {
-      background: honeydew;
-     }
+ul#filters li a:hover {
+   text-decoration: underline;
 }
-*/
 
-
-input,button {
-    background-color: coral;
-    scale: 5rem;
+.hide {
+   display: none;
 }

@@ -1,39 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>JavaScript Calculator</title>
-   <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="shortcut icon" href="favicon.ico">
-   <link rel="shortcut icon" href="favicon.png">
-   
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filter Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-   
-   <div class="wrapper">
 
-      <form id="calculator__form">
-         <input type="number" requried>
-         <select name="operation" id="operation__select" required>
-            <option value="add">+</option>
-            <option value="subtract">-</option>
-            <option value="multiply">&times;</option>
-            <option value="divide">&divide;</option>
-            <option value="randomwords"> ✴ </option>
-         </select>
-         <input type="number" type="text" requried>
-         
-         <button>=</button>
-         <input type="text" id="operation__result" disabled>
-      </form>
+  <h1><a href="index.html">COLLECTIONS</a></h1>
 
-   </div>
+  
+  <ul id="filters">
+    <li><a href="#" data-filter="Koreanmusic">K-Music</a></li>
+    <li><a href="#" data-filter="Foreignmusic">Foreign Music</a></li>
+    <li><a href="#" data-filter="Mymusic">My Music</a></li>
+    <!-- <li><a href="#" data-filter="film">Films</a></li>
+    <li><a href="#" data-filter="Stationary">Stationary</a></li> -->
+  </ul>
 
-   <script src="js/script.js"></script>
+  <ul id="images">
+      <li class="Koreanmusic"><img src="km22.png" alt=""></li>
+      <li class="Koreanmusic"><img src="km23.png" alt=""></li>
+      <li class="Koreanmusic"><img src="km24.png" alt=""></li>
+    
+      <li class="Mymusic"><img src="mym14.png" alt=""></li>
+      <li class="Mymusic"><img src="mym15.png" alt=""></li>
+      <li class="Foreignmusic"><img src="fm2.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm3.png" alt=""></li>
+      <li class="Mymusic"><img src="mym37.png" alt=""></li>
+      <li class="Mymusic"><img src="mym38.png" alt=""></li>
+      <li class="Mymusic"><img src="mym39.png" alt=""></li>
+      <li class="Mymusic"><img src="mym16.png" alt=""></li>
+      <li class="Mymusic"><img src="mym17.png" alt=""></li>
+      <li class="Koreanmusic"><img src="km14.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km15.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km16.png" alt=""></li>
+      <li class="Mymusic"><img src="mym18.png" alt=""></li>
+      <li class="Mymusic"><img src="mym19.png" alt=""></li>
+      <li class="Foreignmusic"><img src="fm16.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm17.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm18.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm19.png" alt=""></li>
+      <li class="Mymusic"><img src="mym1.png" alt=""></li>
+      <li class="Mymusic"><img src="mym2.png" alt=""></li>
+      <li class="Mymusic"><img src="mym3.png" alt=""></li>
+      
+      <li class="Mymusic"><img src="mym7.png" alt=""></li>
+      <li class="Mymusic"><img src="mym8.png" alt=""></li>
+      <li class="Mymusic"><img src="mym9.png" alt=""></li>
+      <li class="Mymusic"><img src="mym10.png" alt=""></li>
+      <li class="Mymusic"><img src="mym11.png" alt=""></li>
+      <li class="Mymusic"><img src="mym12.png" alt=""></li>
+      <li class="Mymusic"><img src="mym13.png" alt=""></li>
+      
+      <li class="Mymusic"><img src="mym20.png" alt=""></li>
+      <li class="Mymusic"><img src="mym22.png" alt=""></li>
+      <li class="Mymusic"><img src="mym23.png" alt=""></li>
+      <li class="Mymusic"><img src="mym24.png" alt=""></li>
+      <li class="Mymusic"><img src="mym25.png" alt=""></li>
+      <li class="Mymusic"><img src="mym26.png" alt=""></li>
+      <li class="Mymusic"><img src="mym27.png" alt=""></li>
+      <li class="Mymusic"><img src="mym28.png" alt=""></li>
+      <li class="Mymusic"><img src="mym29.png" alt=""></li>
+      <li class="Mymusic"><img src="mym30.png" alt=""></li>
+      <li class="Mymusic"><img src="mym31.png" alt=""></li>
+      <li class="Mymusic"><img src="mym32.png" alt=""></li>
+      <li class="Mymusic"><img src="mym33.png" alt=""></li>
+      <li class="Mymusic"><img src="mym34.png" alt=""></li>
+      <li class="Mymusic"><img src="mym35.png" alt=""></li>
+      <li class="Mymusic"><img src="mym36.png" alt=""></li>
+      <li class="Mymusic"><img src="mym37.png" alt=""></li>
+      <li class="Mymusic"><img src="mym38.png" alt=""></li>
+      <li class="Mymusic"><img src="mym39.png" alt=""></li>
+      <li class="Mymusic"><img src="mym40.png" alt=""></li>
+      <li class="Mymusic"><img src="mym41.png" alt=""></li>
+      <li class="Mymusic"><img src="mym42.png" alt=""></li>
+      <li class="Mymusic"><img src="mym43.png" alt=""></li>
+      <li class="Mymusic"><img src="mym44.png" alt=""></li>
+      <li class="Mymusic"><img src="mym45.png" alt=""></li>
+      
+    <li class="Koreanmusic"><img src="km1.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km2.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km3.png" alt=""></li>
+    <li class="Mymusic"><img src="mym4.png" alt=""></li>
+      <li class="Mymusic"><img src="mym5.png" alt=""></li>
+      <li class="Mymusic"><img src="mym6.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km4.png" alt=""></li>
+    <li class="film"><img src="km5.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km6.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km7.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km8.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km9.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km10.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km11.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km12.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km13.png" alt=""></li>
+    
+    <li class="Koreanmusic"><img src="km17.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km18.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km19.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km20.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km21.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km22.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km23.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km24.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km25.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km26.png" alt=""></li> 
+    <li class="Koreanmusic"><img src="km27.png" alt=""></li>
+    <li class="Koreanmusic"><img src="km28.png" alt=""></li>
+
+    <li class="Foreignmusic"><img src="fm1.png" alt=""></li>
+    
+    <li class="Foreignmusic"><img src="fm4.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm5.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm6.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm7.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm8.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm9.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm10.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm11.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm12.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm13.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm14.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm15.png" alt=""></li>
+    
+    <li class="Foreignmusic"><img src="fm20.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm21.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm22.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm23.png" alt=""></li>
+    <li class="Foreignmusic"><img src="fm24.png" alt=""></li>
+
+
+    
+  </ul>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
